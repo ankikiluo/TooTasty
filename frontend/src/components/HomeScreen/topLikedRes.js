@@ -8,10 +8,11 @@ const TopLikedRes = () => {
               <h1 className="text-white">This is TOP liked restaurant!</h1>
           </div>
           <div className="flex p-2">
-              <div className="homepage-card-child m-2">
+
+              <div className="m-2">
                   {/*{HomepageCardElement()}*/}
                   <a href="#">
-                      <div className="homepage-card-img">
+                      <div className="card homepage-card-img">
                           <img src="./img/top-liked-1.jpg" alt=""/>
                           <div className="text">
                               <h2>NAME</h2>
@@ -21,10 +22,10 @@ const TopLikedRes = () => {
                       </div>
                   </a>
               </div>
-              <div className="homepage-card-child m-2">
+              <div className="m-2">
                   {/*{HomepageCardElement()}*/}
                   <a href="#">
-                      <div className="homepage-card-img">
+                      <div className="card homepage-card-img">
                           <img src="./img/top-liked-2.jpg" alt=""/>
                           <div className="text">
                               <h2>NAME</h2>
@@ -34,10 +35,10 @@ const TopLikedRes = () => {
                       </div>
                   </a>
               </div>
-              <div className="homepage-card-child m-2">
+              <div className="m-2">
                   {/*{HomepageCardElement()}*/}
                   <a href="#">
-                      <div className="homepage-card-img">
+                      <div className="card homepage-card-img">
                           <img src="./img/top-liked-3.jpg" alt=""/>
                           <div className="text">
                               <h2>NAME</h2>

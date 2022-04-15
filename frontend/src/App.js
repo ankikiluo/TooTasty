@@ -6,6 +6,10 @@ import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import LogInScreen from "./components/LandingScreen/logInScreen";
 import Register from "./components/LandingScreen/register";
 import PrivacyPolicy from "./components/LandingScreen/privacyPolicy";
+import SearchScreen from "./components/SeaechScreen/searchScreen";
+import React from "react";
+import UserProfile from "./components/ProfileScreen/userProfile";
+import Navbar from "./components/Navbar/navbar";
 
 
 function App() {
@@ -17,15 +21,18 @@ function App() {
                 <Route exact path="/login" element={<LogInScreen/>}/>
                 <Route exact path="/register" element={<Register/>}/>
                 <Route path="/register/privacy" element={<PrivacyPolicy/>}/>
-                {/*<Route path="/profile/" element={<Profile/>}/>*/}
+                <Route path="/profile" element={<UserProfile/>}/>
                 {/*<Route path="/profile/:id" element={<Profile/>}/>*/}
                 <Route exact path="/home" element={<HomeScreen/>}/>
-                {/*<Route exact path="/watchlist/:id" element={<WatchlistScreen/>}/>*/}
-                {/*<Route path="/search" element={<SearchScreen/>}/>*/}
-                {/*<Route path="/search/:searchTerm" element={<SearchScreen/>}/>*/}
+                {/*<Route exact path="/ReviewsList/:id" element={<ReviewsListScreen/>}/>*/}
+                <Route path="/search" element={<SearchScreen/>}/>
+                {/*<Route path="/search/:keyword" element={<SearchScreen/>}/>*/}
                 {/*<Route path="/search/details/:id" element={<DetailsScreen/>}/>*/}
             </Routes>
         </BrowserRouter>
+        <div className="flex mt-5">
+            <h6 className="text-decoration-none ">Copyright © 2004–2022 TooTasty Inc. TooTasty burst and related marks are registered trademarks of TooTasty.</h6>
+        </div>
 
     </>
   );

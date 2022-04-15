@@ -1,12 +1,11 @@
-import HomepageCardElement from "./homepageCardElement";
 import {Link} from "react-router-dom";
 import ReviewElement from "./reviewElement";
 
-const RecentReviewedRes = () => {
+const FavouriteRes = () => {
   return(
       <>
           <div className="mt-5 m-3 flex">
-              <h1 className="text-white">You recent reviews</h1>
+              <h1 className="text-white">You Favourite restaurant</h1>
           </div>
 
           <div className="flex p-2">
@@ -56,4 +55,4 @@ const RecentReviewedRes = () => {
       </>
   )
 }
-export default RecentReviewedRes;
+export default FavouriteRes;

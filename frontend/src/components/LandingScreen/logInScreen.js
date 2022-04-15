@@ -9,8 +9,8 @@ const LogInScreen = () => {
     return (
         <>
             <div className="">
+                {Navbar()}
                 <section className="header">
-                    {Navbar()}
                     <div className="flex height-100vh">
                         <div className="log-in-form-box">
                             <h3 className="text-white mt-2">login</h3>
