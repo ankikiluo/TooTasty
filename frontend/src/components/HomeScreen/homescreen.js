@@ -2,6 +2,7 @@ import Navbar from '../Navbar/navbar'
 import Searchbar from "../Searchbar/searchbar";
 import TopLikedRes from "../HomeScreen/topLikedRes";
 import RecentReviewedRes from "../HomeScreen/recentReviewedRes";
+import React from "react";
 const HomeScreen = () => {
     return(
         <>

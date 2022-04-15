@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 const Navbar = () => {
     return(
         <>
@@ -13,15 +15,19 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarColor01">
                         <ul className="navbar-nav me-auto">
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">Home
+                                {/*<a className="nav-link active" href="#">Home*/}
+                                {/*    <span className="visually-hidden">(current)</span>*/}
+                                {/*</a>*/}
+                                <Link className="nav-link active" to="/home">Home
                                     <span className="visually-hidden">(current)</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Search</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Profile</a>
+                                {/*<a className="nav-link" href="#">Profile</a>*/}
+                                <Link className="nav-link" to="#">Profile</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Privacy</a>
@@ -30,8 +36,8 @@ const Navbar = () => {
 
                             {/*<a className="" href="#">Log In</a>*/}
                         {/*<button type="button" className="btn btn-outline-white">Sign up</button>*/}
-                        <button type="button" className="btn btn-link-white">Log In</button>
-                        <button type="button" className="btn btn-outline-white">Sign up</button>
+                        <button type="button" className="btn btn-link-white"><Link className="text-white" to="/login">Log In</Link></button>
+                        <button type="button" className="btn btn-outline-white"><Link className="text-white" to="/register">Sign up</Link></button>
                     </div>
                 </div>
             </nav>
