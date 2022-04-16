@@ -19,7 +19,6 @@ const Register = () => {
                             <input className="m-2"type="password" placeholder="password"/>
                             <input className="m-2"type="password" placeholder="email"/>
                             <input className="m-2" type="text" placeholder="location"/>
-                            <input className="m-2"type="date" placeholder="birthday"/>
                             <button type="button" className="btn btn-outline-primary hero-btn">Sign up</button>
                             <span className="text-white m-1">Already have an account? <Link to="/login">Log in</Link></span>
                         </div>
