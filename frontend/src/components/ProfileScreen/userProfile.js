@@ -4,6 +4,7 @@ import UserCard from "./userCard";
 import UserDetail from "./userDetail";
 import UserReviews from "./userReviews";
 import FavouriteRes from "../HomeScreen/favouriteRes";
+import user from "../datafornow/user.json"
 
 const UserProfile = () => {
   return(
@@ -13,7 +14,7 @@ const UserProfile = () => {
               <section className="header height-auto">
                   <div className="row">
                       <div className="col-4">
-                          {UserCard()}
+                          {UserCard(user)}
                       </div>
                       <div className="col-8">
                           {UserDetail()}

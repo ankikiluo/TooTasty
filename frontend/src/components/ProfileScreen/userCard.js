@@ -1,15 +1,26 @@
 import {Link} from "react-router-dom";
 import './userprofile.css'
-const UserCard = () => {
+const UserCard = ({
+    user = {
+        "_id": "34238432784901",
+        "name": "Alice",
+        "email": "alice@134.com",
+        "role": "customer",
+        "bio": "I love eatting!",
+        "location": "Watertown",
+        "image_url": "./img/top-liked-1.jpg"
+    }
+                  }) => {
     return(
         <>
             <div className="user-card user-card-flex">
                 <div className="m-5">
-                    <img src="./img/top-liked-1.jpg" alt=""/>
-                    <h3 className="user-card-name text-white">Alice
+                    <img src={user.image_url} alt=""/>
+                    <h3 className="user-card-name text-white">{user.name}
                         {/*<button type="button" className="btn btn-primary">Follow</button>*/}
                     </h3>
-                    <p className="text-white">I love eatting!</p>
+                    <span className="badge rounded-pill bg-primary disabled">{user.role}</span>
+                    <p className="text-white">{user.bio}</p>
 
                     {/*<ul className="list-group mb-4">*/}
                         {/*<li className="list-group-item"><Link to="#">Follower</Link></li>*/}
