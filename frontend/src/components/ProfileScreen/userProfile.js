@@ -17,7 +17,7 @@ const UserProfile = () => {
                           {UserCard(user)}
                       </div>
                       <div className="col-8">
-                          {UserDetail()}
+                          {UserDetail(user)}
                           {UserReviews()}
                           {FavouriteRes()}
                       </div>
