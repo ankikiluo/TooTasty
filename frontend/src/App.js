@@ -9,13 +9,15 @@ import PrivacyPolicy from "./components/LandingScreen/privacyPolicy";
 import SearchScreen from "./components/SeaechScreen/searchScreen";
 import React from "react";
 import UserProfile from "./components/ProfileScreen/userProfile";
-import Navbar from "./components/Navbar/navbar";
+import NavbarComp from "./components/Navbar/NavbarComp";
 
 
 function App() {
   return (
     <>
+
         <BrowserRouter>
+            <NavbarComp/>
             <Routes>
                 <Route exact path="/" element={<LogInScreen/>}/>
                 <Route exact path="/login" element={<LogInScreen/>}/>

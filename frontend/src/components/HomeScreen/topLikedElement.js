@@ -18,6 +18,7 @@ const TopLikedElement = ({
                         <img src={restaurant.image_url} alt="restaurant_image_url"/>
                         <div className="text">
                             <h2>{restaurant.name}</h2>
+                            <p><i className="fa-solid fa-star"/>{restaurant.rating}</p>
                             <p>{restaurant.address}</p>
                             <p><i className="fa-solid fa-heart"/> liked by 100 users</p>
                         </div>

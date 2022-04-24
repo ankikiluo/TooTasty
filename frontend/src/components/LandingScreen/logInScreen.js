@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import Navbar from "../Navbar/navbar";
 import Searchbar from "../Searchbar/searchbar";
 import TopLikedRes from "../HomeScreen/topLikedRes";
 import RecentReviewedRes from "../HomeScreen/recentReviewedRes";
@@ -9,7 +8,6 @@ const LogInScreen = () => {
     return (
         <>
             <div className="">
-                {Navbar()}
                 <section className="header">
                     <div className="flex height-100vh">
                         <div className="log-in-form-box">

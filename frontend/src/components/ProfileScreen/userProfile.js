@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/navbar";
 import React from "react";
 import UserCard from "./userCard";
 import UserDetail from "./userDetail";
@@ -10,7 +9,6 @@ const UserProfile = () => {
   return(
       <>
           <div>
-              {Navbar()}
               <section className="header height-auto">
                   <div className="row">
                       <div className="col-4">
