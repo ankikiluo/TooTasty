@@ -12,13 +12,9 @@ const FavouriteResElement = ({ restaurant }) => {
             </div>
             <div className="col-12 col-md-6 ">
               <h2>{restaurant.name}</h2>
+              <span><i className="fa-solid fa-heart"/></span>{restaurant.liked} likes
             </div>
           </div>
-          <span>
-            <p>
-              <i className="fa-solid fa-heart"/> {restaurant.liked} likes
-            </p>
-          </span>
         </li>
       </Link>
     </>
